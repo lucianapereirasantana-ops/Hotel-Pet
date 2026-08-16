@@ -1,0 +1,131 @@
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Pet - Usuários</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Hotel Pet</h1>
+
+        <nav>
+            <a href="reservas.html">Reservas</a>
+            <a href="pets.html">Pets</a>
+            <a href="usuarios.html">Usuários</a>
+            <a href="configuracoes.html">Configurações</a>
+            <a href="index.html">Sair</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2>Usuários</h2>
+
+        <section>
+
+            <h3>Pesquisar usuário</h3>
+
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="funcao">Função:</label>
+
+                <select id="funcao" name="funcao">
+                    <option value="">Todas</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="funcionario">Funcionário</option>
+                    <option value="gerente">Gerente</option>
+                </select>
+
+                <button type="submit">Pesquisar</button>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <h3>Usuários cadastrados</h3>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Função</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Maria Silva</td>
+                        <td>maria@email.com</td>
+                        <td>Cliente</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="usuario.html">Visualizar</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>João Santos</td>
+                        <td>joao@email.com</td>
+                        <td>Funcionário</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="usuario.html">Visualizar</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana Oliveira</td>
+                        <td>ana@email.com</td>
+                        <td>Gerente</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="usuario.html">Visualizar</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <a href="usuario.html">
+                <button type="button">Cadastrar Novo Usuário</button>
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Hotel Pet</p>
+
+    </footer>
+
+</body>
+
+</html>
