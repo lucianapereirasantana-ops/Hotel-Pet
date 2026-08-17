@@ -1,0 +1,148 @@
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Pet - Pets</title>
+
+    <link rel="stylesheet" href="stylehp.css">
+    
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Hotel Pet</h1>
+
+        <nav>
+            <a href="reservas.html">Reservas</a>
+            <a href="pets.html">Pets</a>
+            <a href="usuarios.html">Usuários</a>
+            <a href="configuracoes.html">Configurações</a>
+            <a href="index.html">Sair</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2>Pets</h2>
+
+        <section>
+
+            <h3>Pesquisar Pet</h3>
+
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="tipo">Tipo de animal:</label>
+
+                <select id="tipo" name="tipo">
+                    <option value="">Todos</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" name="raca">
+
+                <label for="tamanho">Tamanho:</label>
+
+                <select id="tamanho" name="tamanho">
+                    <option value="">Todos</option>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+
+                <button type="submit">Pesquisar</button>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <h3>Pets cadastrados</h3>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Raça</th>
+                        <th>Tamanho</th>
+                        <th>Proprietário</th>
+                        <th>Ações</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Thor</td>
+                        <td>Cachorro</td>
+                        <td>Golden Retriever</td>
+                        <td>Grande</td>
+                        <td>Maria Silva</td>
+                        <td>
+                            <a href="pet.html">Visualizar</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Luna</td>
+                        <td>Gato</td>
+                        <td>Siamês</td>
+                        <td>Pequeno</td>
+                        <td>João Santos</td>
+                        <td>
+                            <a href="pet.html">Visualizar</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mel</td>
+                        <td>Cachorro</td>
+                        <td>Poodle</td>
+                        <td>Médio</td>
+                        <td>Ana Oliveira</td>
+                        <td>
+                            <a href="pet.html">Visualizar</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <a href="pet.html">
+                <button type="button">Cadastrar Novo Pet</button>
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Hotel Pet</p>
+
+    </footer>
+
+</body>
+
+</html>
