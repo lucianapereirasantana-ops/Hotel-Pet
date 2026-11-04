@@ -135,3 +135,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+// Salvar alterações
+    formularioReserva.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const dados = {
+            pet: pet.value,
+            proprietario: proprietario.value,
+            entrada: entrada.value,
+            saida: saida.value,
+            diaria: diaria.value,
+            total: total.value,
+            status: status.value,
+            observacoes: observacoes.value
+        };
+
+        localStorage.setItem("reservaThor", JSON.stringify(dados));
+
+        alert("Reserva atualizada com sucesso!");
+    });
+}
